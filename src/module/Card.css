@@ -1,0 +1,96 @@
+.card_wrapper {
+	position: relative;
+	transition: 0.3s all ease;
+	overflow: hidden;
+	border-radius: 12px;
+}
+.card_wrapper:hover {
+	border-radius: 12px;
+}
+.card_wrapper img {
+	transition: all ease-out 0.5s;
+	border-radius: 12px;
+}
+.image_hover {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 12px;
+	opacity: 1;
+	background: rgba(20, 20, 20, 0.48);
+	transition: all ease-out 0.5s;
+	scale: 1;
+	visibility: hidden;
+}
+
+.card_wrapper:hover .image_hover {
+	visibility: visible;
+	scale: 0.85;
+}
+
+.card_wrapper:hover img {
+	transform: scale(1.1);
+	border-radius: 12px;
+}
+
+.image_rating {
+	position: absolute;
+	bottom: 28px;
+	left: 20px;
+	z-index: 1;
+	background-color: #d1d0cf;
+	display: flex;
+	flex-direction: column;
+	opacity: 0.7;
+	border-radius: 4px;
+	justify-content: center;
+	align-items: center;
+	font-weight: 600;
+	color: #141414;
+}
+
+.image_rating svg {
+	z-index: 2;
+}
+
+.re-type {
+	display: block;
+	position: absolute;
+	z-index: 3;
+	font-size: 18px;
+	color: #141414;
+	text-align: center;
+	background: #fcd535;
+	line-height: 23px;
+	width: 80px;
+	right: -10px;
+	height: 23px;
+	bottom: 10px;
+	font-weight: 400;
+	border-radius: 8px;
+	margin-right: 15px;
+}
+
+.anticon.anticon-play-circle {
+	position: absolute;
+	width: 150px;
+	font-size: 36px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 99;
+	color: #d1d0cf;
+}
+
+.card-name {
+	color: #d1d0cf !important;
+	z-index: 2;
+	text-align: center;
+}
+
+.card-name:hover {
+	color: #fcd535 !important;
+	cursor: pointer;
+}

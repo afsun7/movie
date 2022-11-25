@@ -1,0 +1,14 @@
+#moviesCard {
+	margin-top: 100px !important;
+}
+
+#pagination {
+	display: flex !important;
+	justify-content: center !important;
+}
+
+.ant-pagination {
+	display: flex !important;
+	justify-content: center !important;
+	margin-top: 20px !important;
+}

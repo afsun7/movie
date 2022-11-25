@@ -1,0 +1,73 @@
+.swiper {
+  width: 98%;
+}
+
+.img {
+  border-radius: 13px;
+}
+.name {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 300;
+  margin-right: 10px;
+  text-align: center;
+}
+.name:hover {
+  color: #fcd535;
+}
+
+.forBg {
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: cover !important;
+  object-fit: cover !important;
+  transition: all 0.5s;
+  height: 500px;
+  padding: 10px 0;
+  position: relative;
+}
+.forBg::before {
+  content: "";
+  position: absolute;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.622),
+    rgba(0, 0, 0, 0.9)
+  );
+  top: 0;
+  left: 0;
+  height: 500px;
+  width: 100%;
+}
+
+.BringFront {
+  z-index: 2;
+}
+
+.ant-modal-header {
+  background-color: rgba(0, 0, 0) !important;
+  border-bottom: 1px solid rgba(0, 0, 0) !important;
+}
+
+.ant-modal-body {
+  padding: 0 !important;
+  background-color: rgba(0, 0, 0) !important;
+}
+
+.ant-modal-title {
+  color: rgb(238, 235, 235) !important;
+}
+
+.anticon.anticon-close.ant-modal-close-icon {
+  color: rgb(238, 235, 235) !important;
+}
+
+.iframe {
+  border-radius: 0%;
+  border: black solid;
+}
+
+.ant-modal-confirm .ant-modal-body {
+  background-color: rgb(255, 252, 252) !important;
+  padding: 32px 32px 24px !important;
+}
